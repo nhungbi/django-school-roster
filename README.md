@@ -108,9 +108,11 @@ Now that we have our initial Django project running, let's move some logic from 
 
 Move each of the defined classes from each class file (in our school interface folder) into `school_roster_app/models.py`. Keep in mind that the order of the classes listed in this file will matter, based on inheritance/composition use. We are moving these classes into `models.py` to just simulate our Django application data models, but keep in mind this is not the official way to create data models in Django. This is a topic we'll have to cover later once we learn about Django Models.
 
-### Data --> app/data/
+You can delete the original 'classes' folder after this.
 
-Move each of our csv data files (in our school interface folder) into a new folder created under our app folder, `school_roster_app/data/`.
+### Data
+
+The `data` folder, which contains our csv files should remain where they are (to have this work more seemlessly with the provided code). Keep in mind that we normally would be using databases to store our data when using Django, but for now we're stuck with using CSV data files. 
 
 
 ## 3. Create Views
