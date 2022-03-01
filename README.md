@@ -113,7 +113,7 @@ Move each of the defined classes from each class file (in our school interface f
 Move each of our csv data files (in our school interface folder) into a new folder created under our app folder, `school_roster_app/data/`.
 
 
-## 2. Create Views
+## 3. Create Views
 
 This is where you're going to have to start to implement some of your own logic for practice! We've created one view handler for you below. You'll need to create the rest of the view logic in `school_roster_app/views.py`! We can't do all the work for you :) 
 
@@ -157,7 +157,7 @@ def student_detail(request, student_id):
     pass # implement
 ```
 
-## 3. Create Templates
+## 4. Create Templates
 
 First, you need to create a new directory under your app folder, named "templates". It **MUST** be named exactly that, because this is where Django will automatically look for our templates. We can optionally create another nested directory under "templates", called "pages" (strictly for organizational purposes). We've given you the code for one template file, but you'll have to create others. 
 
@@ -177,7 +177,7 @@ First, you need to create a new directory under your app folder, named "template
 </html>
 ```
 
-## 4. Create Routing
+## 5. Create Routing
 
 1. Update project's urls.py
 
@@ -210,7 +210,7 @@ urlpatterns = [
 ]
 ```
 
-## 5. Release Application
+## 6. Release Application
 
 Once you've completed all of the required steps above, make sure you test your finished product. Run your server, go to your home page ("http://localhost:8000/school/"), and make sure all of your links work. To review, you should have 5 routes and pages, and proper linking between each!
 
@@ -220,6 +220,6 @@ Once you've completed all of the required steps above, make sure you test your f
 - All Students page
 - Student Detail page
 
-## 6. Bonus: CSS Styling
+## 7. Bonus: CSS Styling
 
 Add some CSS styling to your HTML templates. Here's the Django resource that might help you achieve this: https://docs.djangoproject.com/en/4.0/howto/static-files/
