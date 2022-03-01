@@ -106,7 +106,7 @@ Now that we have our initial Django project running, let's move some logic from 
 
 ### Classes --> app/models.py
 
-Move each of the defined classes from each class file (in our school interface folder) into `school_roster_app/models.py`. Keep in mind that the order of the classes listed in this file will matter, based on inheritance/composition use. We are moving these classes into `models.py` to just simulate our Django application data models, but keep in mind this is not the official way to create data models in Django. This is a topic we'll have to cover later once we learn about Django Models.
+Move each of the defined classes from each class file (in the `classes` folder) into `school_roster_app/models.py`. Keep in mind that the order of the classes listed in this file will matter, based on inheritance/composition use. We are moving these classes into `models.py` to just simulate our Django application data models, but keep in mind this is not the official way to create data models in Django. This is a topic we'll have to cover later once we learn about Django Models.
 
 You can delete the original 'classes' folder after this.
 
