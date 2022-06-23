@@ -1,0 +1,15 @@
+<!-- school_roster_app/templates/pages/index.html -->
+<html>
+  <head>
+    <title>School Page</title>
+    {% load static %}
+    <link rel="stylesheet" href = "{% static 'school_static/style.css' %}">
+  </head>
+  <body>
+    <h2>{{school_name}} Directory</h2>
+    <ul>
+      <li><a href="{% url 'school_app:list_staff' %}">All Staff</a></li>
+      <li><a href="{% url 'school_app:list_students' %}">All Student</a></li>
+    </ul>
+  </body>
+</html>

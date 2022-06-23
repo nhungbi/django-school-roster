@@ -1,0 +1,17 @@
+
+<html>
+    <head>
+      <title>Staff Detail Page</title>
+      {% load static %}
+      <link rel="stylesheet" href = "{% static 'school_static/style.css' %}">
+    </head>
+    <body>
+      <h2>{{staff.name}}'s Information</h2>
+      <ul>
+        <li>Age: {{staff.age}}</li>
+        <li>Password: {{staff.password}}</li>
+        <li>Role: {{staff.role}}</li>
+        <li>ID: {{staff.employee_id}}</li>
+      </ul>
+    </body>
+  </html>

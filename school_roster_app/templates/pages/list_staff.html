@@ -1,0 +1,22 @@
+
+<html>
+  <head>
+    <title>All Staff Page</title>
+    {% load static %}
+    <link rel="stylesheet" href = "{% static 'school_static/style.css' %}">
+  </head>
+  <body>
+    <h2>{{school_name}}'s Staff</h2>
+    <ul>
+        {% if staff_list %} <!--jinja synatx to write python in html-->
+        <ul>
+            {% for staff in staff_list %}
+            <li><a href = "{% url 'school_app:staff_detail' staff.employee_id %}"> {{staff.name}}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No staffs are available.</p>
+        {% endif %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+
+<html>
+    <head>
+        <title>Student Detail Page</title>
+        {% load static %}
+        <link rel="stylesheet" href = "{% static 'school_static/style.css' %}">
+    </head>
+    <body>
+      <h2>{{student.name}}'s Information</h2>
+      <ul>
+        <li>Age: {{student.age}}</li>
+        <li>Password: {{student.password}}</li>
+        <li>Role: {{student.role}}</li>
+        <li>ID: {{student.school_id}}</li>
+      </ul>
+    </body>
+  </html>
+
+
+

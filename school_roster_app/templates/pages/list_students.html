@@ -1,0 +1,22 @@
+
+<html>
+    <head>
+      <title>All Students Page</title>
+      {% load static %}
+      <link rel="stylesheet" href = "{% static 'school_static/style.css' %}">
+    </head>
+    <body>
+      <h2>{{school_name}}'s Students</h2>
+      <ul>
+          {% if students_list %} <!--jinja synatx to write python in html-->
+          <ul>
+              {% for student in students_list %}
+              <li><a href = "{% url 'school_app:student_detail' student.school_id %}"> {{student.name}}</a></li>
+              {% endfor %}
+          </ul>
+          {% else %}
+          <p>No students are available.</p>
+          {% endif %}
+      </ul>
+    </body>
+  </html>

@@ -1,0 +1,29 @@
+<!-- pages/student_new.html -->
+
+<html>
+<head></head>
+<body>
+{% block main-content %}
+  <h2>Add Student</h2>
+  <form method="POST">
+    {% csrf_token %} <!-- don't forget your csrf token here inside your form! -->
+    <label for="name">Student Name</label>
+    <input type="text" name="name" placeholder="name" />
+    <br />
+    <label for="age">Age</label>
+    <input type="text" name="age" placeholder="age" />
+    <br />
+    <label for="id">School Id</label>
+    <input type="text" name="id" placeholder="#id#" />
+    <br />
+    <label for="password">Password</label>
+    <input type="password" name="password" placeholder="password" />
+    <br />
+    <button type="submit">Add Student</button>
+  </form>
+
+
+{% endblock %}
+</body>
+
+</html>
